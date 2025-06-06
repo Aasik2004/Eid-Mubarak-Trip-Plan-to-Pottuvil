@@ -2,116 +2,151 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eid Trip Plan - Pottuvil 2025</title>
+  <title>Eid Mubarak from Aasik</title>
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      line-height: 1.6;
-      background: #f9f9f9;
-      padding: 20px;
-      max-width: 900px;
-      margin: auto;
-    }
-    h1, h2 {
-      color: #2c3e50;
-    }
-    .section {
-      background: #ffffff;
-      padding: 20px;
-      margin-bottom: 20px;
-      border-radius: 10px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
-    a.button {
-      display: inline-block;
-      background-color: #3498db;
-      color: white;
-      padding: 10px 15px;
-      border-radius: 5px;
-      text-decoration: none;
-      margin-top: 10px;
-    }
-    iframe {
-      width: 100%;
-      height: 300px;
-      border: 0;
-      border-radius: 10px;
-    }
+    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Amiri', serif;
+  background: radial-gradient(circle at top, #e0f7fa, #fff3e0);
+  background-image: url('https://cdn.pixabay.com/photo/2020/05/20/12/18/ramadan-5198322_1280.jpg');
+  background-size: cover;
+  background-position: center;
+  backdrop-filter: blur(3px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.stars {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  background: url('https://i.ibb.co/2jM72qx/star.png') repeat;
+  animation: sparkle 20s linear infinite;
+  opacity: 0.6;
+}
+
+@keyframes sparkle {
+  0% { background-position: 0 0; }
+  100% { background-position: 1000px 1000px; }
+}
+
+.card {
+  background-color: rgba(255, 255, 255, 0.95);
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  max-width: 600px;
+  width: 90%;
+  z-index: 1;
+}
+
+h1 {
+  font-size: 3em;
+  color: #00695c;
+  margin-bottom: 20px;
+  animation: fadeIn 2s ease-in-out;
+}
+
+p.dua {
+  font-size: 1.4em;
+  margin-top: 20px;
+  color: #444;
+  animation: fadeIn 3s ease-in-out;
+}
+
+.heart {
+  font-size: 2.5em;
+  color: crimson;
+  margin-top: 20px;
+  animation: pulse 1.5s infinite;
+}
+
+.footer {
+  margin-top: 30px;
+  font-weight: bold;
+  font-size: 1.2em;
+  color: #555;
+}
+
+.btn {
+  margin-top: 30px;
+  padding: 12px 25px;
+  background-color: #00897b;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background 0.3s;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+.ayah {
+  margin-top: 20px;
+  font-size: 1.2em;
+  color: #004d40;
+  background-color: #e0f2f1;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.audio-control {
+  margin-top: 20px;
+}
+
+@keyframes pulse {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+  100% { transform: scale(1); }
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; transform: translateY(-10px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
   </style>
 </head>
 <body>
-  <h1>🕌 Eid Mubarak Trip Plan - Pottuvil (07.06.2025)</h1>  <div class="section">
-    <h2>1. Date & Time</h2>
-    <p><strong>Date:</strong> 07.06.2025 (Eid Day)</p>
-    <p><strong>Time to Start:</strong> 9:00 AM (After Eid Salah)</p>
-    <p><strong>Return Home:</strong> Before 7:00 PM</p>
-  </div>  <div class="section">
-    <h2>2. Transport</h2>
-    <p><strong>Vehicle:</strong> Hero HF Deluxe (Good Condition ✅)</p>
-    <p><strong>Total Distance:</strong> 160 KM (80 KM × 2)</p>
-    <p><strong>Average Speed:</strong> 60 km/h</p>
-    <p><strong>Travel Time (One Way):</strong> 2 hours approx.</p>
-    <p><strong>Total Estimated Ride Time:</strong> ~4 hours</p>
-    <p><strong>Estimated Petrol Usage:</strong> ~6.83 Liters</p>
-    <p><strong>Petrol Cost (2000 LKR):</strong> ✅ Enough</p>
-  </div>  <div class="section">
-    <h2>3. Places to Visit</h2>
-    <ul>
-      <li>📍 <strong>Arugam Bay</strong> – Beach view, fun place
-        <br><a class="button" href="https://maps.app.goo.gl/f1KKtnkaMNtWNvXSA" target="_blank">Open Map</a>
-            <img src="C:\Users\ttt\OneDrive - British College of Applied Studies\Pottuvil trip plan\Arugam Bay.jpg"></img>
-      </li>
-      <li>📍 <strong>Elephant Rock</strong> – Scenic hill view near beach
-        <br><a class="button" href="https://maps.app.goo.gl/cLcstqhkvRkQ7cFu9" target="_blank">Open Map</a>
-            <img src="C:\Users\ttt\OneDrive - British College of Applied Studies\Desktop\Security\Elephant Rock.jpeg"></img>
-      </li>
-      <li>📍 <strong>Pottuvil Town</strong> – Main stop, shops, mosque, etc.
-        <br><a class="button" href="https://maps.app.goo.gl/722YovUrw9hECYan7" target="_blank">Open Map</a>
-            <img src="C:\Users\ttt\OneDrive - British College of Applied Studies\Desktop\Security\Town.jpeg"></img>
-      </li>
-    </ul>
-  </div>  <div class="section">
-    <h2>4. Food Plan</h2>
-    <ul>
-      <li>🍳 <strong>Breakfast:</strong> After Eid Salah at home or nearby.</li>
-      <li>🍛 <strong>Lunch:</strong> Arugam Bay restaurants or local shops</li>
-      <li>☕ <strong>Evening Tea:</strong> Small hotel on return journey</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>5. Emergency Plan</h2>
-    <ul>
-      <li>🏥 <strong>Nearest Hospital:</strong> <a href="https://maps.app.goo.gl/jXYHVoV76bZqjMTB7" target="_blank">Pottuvil Base Hospital</a></li>
-      <li>🔧 <strong>Bike Repair Shop:</strong> Available in Pottuvil town</li>
-      <li>📱 <strong>Carry:</strong> First aid, phone, power bank, helmet, bike tools</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>6. Budget Estimation 💰</h2>
-    <ul>
-      <li>🛵 Petrol: 2000 LKR</li>
-      <li>🍛 Food: 1000 LKR</li>
-      <li>📱 Snacks + Emergency: 500 LKR</li>
-      <li><strong>Total Budget:</strong> 3500 LKR (Safe Estimate)</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>7. Things to Carry 🎒</h2>
-    <ul>
-      <li>🪪 NIC + License</li>
-      <li>📱 Mobile, charger, power bank</li>
-      <li>💊 First aid kit</li>
-      <li>💵 Cash (at least 3500 LKR)</li>
-      <li>🧢 Cap, Sunglasses, Water bottle</li>
-      <li>📸 Optional: Camera</li>
-    </ul>
-  </div>  <div class="section">
-    <h2>8. Final Notes</h2>
-    <p>✅ Travel with friends for safety</p>
-    <p>✅ Start early and maintain speed limit</p>
-    <p>✅ Respect local areas and nature</p>
-    <p>✅ Keep mobile fully charged & emergency contacts ready</p>
+  <div class="stars"></div>  <div class="card">
+    <h1>✨ Eid Mubarak! ✨</h1><p class="dua">
+  May Allah (SWT) bless you with endless joy, forgive your sins, guide your path, and shower you with mercy — Aameen 🤲🏻
+</p>
+
+<p class="ayah">
+  "Indeed, with hardship [will be] ease." — Quran 94:6
+</p>
+
+<div class="heart">❤️😍</div>
+<div class="footer">— With Love, Mohamed Aasik</div>
+
+<div class="audio-control">
+  <audio controls autoplay loop>
+    <source src="https://cdn.islamic.network/audio/nasheeds/maher-zain-eid-mubarak.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+</div>
+
+<a class="btn" href="https://chat.openai.com">Share the Blessing</a>
+
   </div>
-     <a href="https://youtu.be/nr_z0q20pUU?si=l-Go9OzX4AjdWhek">Click Here for View Pottuvil</a> 
-    <footer style="text-align:center; margin-top:30px;">
-    <p>🕌 <strong>Plan by:</strong> Mohamed Aasik | Eid Mubarak 2025 🌙</p>
-  </footer>
 </body>
 </html>
