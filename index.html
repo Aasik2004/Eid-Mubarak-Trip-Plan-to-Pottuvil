@@ -1,152 +1,204 @@
-<!DOCTYPE html><html lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Eid Mubarak from Aasik</title>
+  <title>Website Design and Development</title>
   <style>
-    @import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');* {
-  box-sizing: border-box;
-}
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+      margin: 0;
+      padding: 0;
+    }
 
-body {
-  margin: 0;
-  padding: 0;
-  font-family: 'Amiri', serif;
-  background: radial-gradient(circle at top, #e0f7fa, #fff3e0);
-  background-image: url('https://cdn.pixabay.com/photo/2020/05/20/12/18/ramadan-5198322_1280.jpg');
-  background-size: cover;
-  background-position: center;
-  backdrop-filter: blur(3px);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 100vh;
-  overflow: hidden;
-}
+    header {
+      background-color: #333;
+      padding: 15px 20px;
+      color: white;
+      text-align: center;
+    }
 
-.stars {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-  background: url('https://i.ibb.co/2jM72qx/star.png') repeat;
-  animation: sparkle 20s linear infinite;
-  opacity: 0.6;
-}
+    nav ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0;
+      background-color: #444;
+      overflow: hidden;
+    }
 
-@keyframes sparkle {
-  0% { background-position: 0 0; }
-  100% { background-position: 1000px 1000px; }
-}
+    nav ul li {
+      display: inline;
+      margin-right: 15px;
+    }
 
-.card {
-  background-color: rgba(255, 255, 255, 0.95);
-  padding: 40px;
-  border-radius: 20px;
-  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.2);
-  text-align: center;
-  max-width: 600px;
-  width: 90%;
-  z-index: 1;
-}
+    nav ul li a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+    }
 
-h1 {
-  font-size: 3em;
-  color: #00695c;
-  margin-bottom: 20px;
-  animation: fadeIn 2s ease-in-out;
-}
+    nav ul li:hover {
+      background-color: #111;
+    }
 
-p.dua {
-  font-size: 1.4em;
-  margin-top: 20px;
-  color: #444;
-  animation: fadeIn 3s ease-in-out;
-}
+    .info {
+      background-color: white;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
 
-.heart {
-  font-size: 2.5em;
-  color: crimson;
-  margin-top: 20px;
-  animation: pulse 1.5s infinite;
-}
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      gap: 20px;
+    }
 
-.footer {
-  margin-top: 30px;
-  font-weight: bold;
-  font-size: 1.2em;
-  color: #555;
-}
+    .left, .right {
+      flex: 1 1 300px;
+      padding: 20px;
+      border-radius: 10px;
+    }
 
-.btn {
-  margin-top: 30px;
-  padding: 12px 25px;
-  background-color: #00897b;
-  color: white;
-  border: none;
-  border-radius: 10px;
-  font-size: 1em;
-  cursor: pointer;
-  transition: background 0.3s;
-  text-decoration: none;
-}
+    .left {
+      background-color: #d0e6f6;
+    }
 
-.btn:hover {
-  background-color: #004d40;
-}
+    .right {
+      background-color: #f6d0d0;
+    }
 
-.ayah {
-  margin-top: 20px;
-  font-size: 1.2em;
-  color: #004d40;
-  background-color: #e0f2f1;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
-}
+    form {
+      background-color: #ffffff;
+      padding: 20px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      width: 300px;
+    }
 
-.audio-control {
-  margin-top: 20px;
-}
+    input[type=text], input[type=email], input[type=password] {
+      width: 100%;
+      padding: 10px;
+      margin: 8px 0;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
 
-@keyframes pulse {
-  0% { transform: scale(1); }
-  50% { transform: scale(1.1); }
-  100% { transform: scale(1); }
-}
+    input[type=submit] {
+      background-color: #007BFF;
+      color: white;
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
 
-@keyframes fadeIn {
-  0% { opacity: 0; transform: translateY(-10px); }
-  100% { opacity: 1; transform: translateY(0); }
-}
+    input[type=submit]:hover {
+      background-color: #0056b3;
+    }
 
+    table {
+      width: 90%;
+      margin: 20px;
+      border-collapse: collapse;
+      background-color: white;
+      box-shadow: 0 0 8px rgba(0,0,0,0.1);
+    }
+
+    th, td {
+      padding: 12px;
+      border: 1px solid #ddd;
+      text-align: left;
+    }
+
+    th {
+      background-color: #4CAF50;
+      color: white;
+    }
+
+    tr:nth-child(even) {
+      background-color: #f2f2f2;
+    }
+
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+      }
+
+      form {
+        width: 90%;
+      }
+
+      table {
+        width: 100%;
+      }
+    }
   </style>
 </head>
 <body>
-  <div class="stars"></div>  <div class="card">
-    <h1>✨ Eid Mubarak! ✨</h1><p class="dua">
-  May Allah (SWT) bless you with endless joy, forgive your sins, guide your path, and shower you with mercy — Aameen 🤲🏻
-</p>
 
-<p class="ayah">
-  "Indeed, with hardship [will be] ease." — Quran 94:6
-</p>
+<header>
+  <h1>My Website</h1>
+</header>
 
-<div class="heart">❤️😍</div>
-<div class="footer">— With Love, Mohamed Aasik</div>
+<nav>
+  <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
 
-<div class="audio-control">
-  <audio controls autoplay loop>
-    <source src="https://cdn.islamic.network/audio/nasheeds/maher-zain-eid-mubarak.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
-  </audio>
+<section class="info">
+  <p><strong>Name:</strong> John Doe</p>
+  <p><strong>Email:</strong> john@example.com</p>
+</section>
+
+<div class="container">
+  <div class="left">
+    <h2>Left Column</h2>
+    <p>This is some content on the left.</p>
+  </div>
+  <div class="right">
+    <h2>Right Column</h2>
+    <p>This is some content on the right.</p>
+  </div>
 </div>
 
-<a class="btn" href="https://chat.openai.com">Share the Blessing</a>
+<section>
+  <h2 style="margin-left:20px;">Registration Form</h2>
+  <form>
+    <label>Name:</label>
+    <input type="text" name="name" required>
+    <label>Email:</label>
+    <input type="email" name="email" required>
+    <label>Password:</label>
+    <input type="password" name="password" required>
+    <input type="submit" value="Register">
+  </form>
+</section>
 
-  </div>
+<section>
+  <h2 style="margin-left:20px;">Student Table</h2>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Course</th>
+    </tr>
+    <tr>
+      <td>Ayesha</td>
+      <td>Web Design</td>
+    </tr>
+    <tr>
+      <td>Ravi</td>
+      <td>Software Eng.</td>
+    </tr>
+  </table>
+</section>
+
 </body>
 </html>
